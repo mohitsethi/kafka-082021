@@ -1,2 +1,3 @@
 test.md
-*.pem
+**/*.pem
+infra
