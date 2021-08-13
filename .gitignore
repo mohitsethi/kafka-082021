@@ -1,4 +1,4 @@
 test.md
 **/*.pem
 infra
-*.pkg
+t*.pkg
