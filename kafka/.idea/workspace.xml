@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c718cd-26db-44be-8719-bdc4adffb5a9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProducerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProducerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyConsumerApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConsumerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsumerApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ProducerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProducerApp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +173,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.ProducerApp">
+  <component name="RunManager" selected="Application.ConsumerApp">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -585,58 +580,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>30</line>
+          <line>49</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>44</line>
+          <line>63</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>46</line>
+          <line>65</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>36</line>
+          <line>55</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="18" />
+          <line>13</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
