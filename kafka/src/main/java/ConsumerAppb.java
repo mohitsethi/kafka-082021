@@ -1,9 +1,14 @@
-import org.apache.kafka.common.*;
-import org.apache.kafka.clients.consumer.*;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.apache.kafka.clients.consumer.ConsumerRecords;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.common.TopicPartition;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Properties;
+import java.util.Set;
 
-public class ConsumerApp {
+public class ConsumerAppb {
     public static void main(String[] args){
 
         // Create the Properties class to instantiate the Consumer with the desired settings:
@@ -33,23 +38,12 @@ public class ConsumerApp {
 //        props.put("client.id", "");
 
 
-        String topic = "mstopic08192021a";
+        String topic = "mstopic08192021b";
         // Create a KafkaConsumer instance and configure it with properties.
         KafkaConsumer<String, String> myConsumer = new KafkaConsumer<String, String>(props);
 
-        // Create a topic subscription list:
-        ArrayList<TopicPartition> partitions = new ArrayList<TopicPartition>();
-        partitions.add(new TopicPartition(topic, 0)); // Adds a TopicPartition instance representing a topic and a partition.
-        partitions.add(new TopicPartition(topic, 1)); // Adds a TopicPartition instance representing a topic and a partition.
-        // Assign partitions to the Consumer:
-        myConsumer.assign(partitions);
-
-        // Retrieves the topic subscription list from the SubscriptionState internal object:
-        Set<TopicPartition> assignedPartitions = myConsumer.assignment();
-
-        // Print the partition assignments:
-        printSet(assignedPartitions);
-
+        myConsumer.subscribe(Arrays.asList(topic));
+        
         // Start polling for messages:
         try {
             while (true){

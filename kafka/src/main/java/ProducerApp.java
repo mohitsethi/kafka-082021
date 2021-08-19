@@ -55,10 +55,14 @@ public class ProducerApp {
 
         int numberOfRecords = 100; // number of records to send
         long sleepTimer = 0; // how long you want to wait before the next record to be sent
-
+        String msg = "";
         try {
                 for (int i = 0; i < numberOfRecords; i++ )
-                    myProducer.send(new ProducerRecord<String, String>(topic, String.format("Message: %s  sent at %s", Integer.toString(i), dtFormat.format(new Date()))));
+//                    myProducer.send(new ProducerRecord<String, String>(topic, String.format("Message: %s  sent at %s", Integer.toString(i), dtFormat.format(new Date()))));
+                    // partition=2 (0,1)
+                    for (int part =0; part < 2; part++) {
+                        myProducer.send(new ProducerRecord<String, String>(topic, msg, part));
+                    }
                     Thread.sleep(sleepTimer);
                     // Thread.sleep(new Random(5000).nextLong()); // use if you want to randomize the time between record sends
         } catch (Exception e) {

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c718cd-26db-44be-8719-bdc4adffb5a9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ConsumerAppb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProducerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProducerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsumerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsumerApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ProducerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ProducerApp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,8 +169,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Dev\NodeJS\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.ConsumerApp">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -585,17 +588,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>63</line>
+          <line>68</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>65</line>
+          <line>70</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -610,13 +613,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
-          <line>55</line>
+          <line>56</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
           <line>13</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ConsumerAppb.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
