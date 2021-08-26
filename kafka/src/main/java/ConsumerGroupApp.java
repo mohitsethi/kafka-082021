@@ -12,7 +12,7 @@ public class ConsumerGroupApp {
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("fetch.min.bytes", 1);
-        props.put("group.id", "my-group"); // Required when subscribing to topics. Rename as desired.
+        props.put("group.id", "ms-group"); // Required when subscribing to topics. Rename as desired.
         props.put("heartbeat.interval.ms", 3000);
         props.put("max.partition.fetch.bytes", 1048576);
         props.put("session.timeout.ms", 30000);

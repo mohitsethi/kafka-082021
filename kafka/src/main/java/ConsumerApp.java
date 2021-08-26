@@ -9,8 +9,8 @@ public class ConsumerApp {
         // Create the Properties class to instantiate the Consumer with the desired settings:
         Properties props = new Properties();
 //        props.put("bootstrap.servers", "localhost:9092, localhost:9093");
-//        props.put("bootstrap.servers", "rmb.Dlink:9092, rmb.Dlink:7092");
-        props.put("bootstrap.servers", "ec2-34-208-1-180.us-west-2.compute.amazonaws.com:9092");
+        props.put("bootstrap.servers", "rmb.Dlink:9092, rmb.Dlink:7092");
+//        props.put("bootstrap.servers", "ec2-34-208-1-180.us-west-2.compute.amazonaws.com:9092");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 //        props.put("fetch.min.bytes", 1);

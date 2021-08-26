@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7c718cd-26db-44be-8719-bdc4adffb5a9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConsumerAppb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerAppb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerAppb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsumerGroupApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ConsumerGroupApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProducerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProducerApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +177,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerApp">
+  <component name="RunManager" selected="Application.ConsumerAppb">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -424,6 +425,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerAppb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ConsumerAppb" />
+      <module name="kafka" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyConsumerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyConsumerApp" />
       <module name="kafka" />
@@ -472,11 +481,13 @@
       <item itemvalue="Application.MyConsumerApp" />
       <item itemvalue="Application.ProducerApp" />
       <item itemvalue="Application.ConsumerApp" />
+      <item itemvalue="Application.ConsumerAppb" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProducerApp" />
+        <item itemvalue="Application.ConsumerAppb" />
         <item itemvalue="Application.ConsumerApp" />
+        <item itemvalue="Application.ProducerApp" />
         <item itemvalue="Application.MyConsumerApp" />
       </list>
     </recent_temporary>
@@ -602,34 +613,14 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ProducerApp.java</url>
           <line>56</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ConsumerAppb.java</url>
           <line>44</line>
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ConsumerApp.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
