@@ -46,4 +46,24 @@ Start kafka 1 node cluster:
  localhost - 0.0.0.0 - 192.168.101.10
 
 
+
 $ bin/kafka-producer-perf-test.sh --topic my_topic --num-records 50 --throughput 10 --producer-props bootstrap.servers=localhost:9092 key.serializer=org.apache.kafka.common.serialization.StringSerializer value.serializer=org.apache.kafka.common.serialization.StringSerializer --record-size 1
+
+
+$bin/kafka-producer-perf-test.sh --topic mstopic08192021a --num-records 50 --throughput 10 --producer-props bootstrap.servers=rmb.Dlink:9092 key.serializer=org.apache.kafka.common.serialization.StringSerializer value.serializer=org.apache.kafka.common.serialization.StringSerializer --record-size 1
+
+
+./bin/kafka-topics.sh --zookeeper localhost:9092 --alter --topic testKafka_5 --partitions 6
+
+bin/kafka-producer-perf-test.sh --topic mstopic08192021b --num-records 50 --throughput 10 --producer-props bootstrap.servers=rmb.Dlink:9092 key.serializer=org.apache.kafka.common.serialization.StringSerializer value.serializer=org.apache.kafka.common.serialization.StringSerializer --record-size 1
+
+
+.\kafka-producer-perf-test.bat --topic my_topic1908_1 --num-records 10 --throughput 10 --producer-props bootstrap.servers=localhost:9092 key.serializer=org.apache.kafka.common.serialization.StringSerializer value.serializer=org.apache.kafka.common.serialization.StringSerializer --record-size 1
+
+-------------
+
+Install confluent CLI
+https://docs.confluent.io/confluent-cli/current/install.html
+
+Starting Schema Registry
+https://docs.confluent.io/4.1.1/schema-registry/docs/using.html
