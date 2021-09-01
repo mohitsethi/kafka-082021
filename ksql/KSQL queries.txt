@@ -16,3 +16,87 @@ CREATE TABLE warnings
 PRINT 'payments';
 
 PRINT 'WARNINGS';
+
+
+---- 
+
+# Instructions for docker environment
+
+ksql> show topics;
+ksql> CREATE STREAM pageviews
+> (viewtime BIGINT,
+> userid VARCHAR,
+> pageid VARCHAR)
+> WITH (KAFKA_TOPIC=’pageviews’,
+> VALUE_FORMAT=’DELIMITED’);
+
+
+# Stream with ksql:
+ksql> CREATE STREAM pageviews_withkey
+>  (viewtime BIGINT,
+>   userid VARCHAR,
+>   pageid VARCHAR)
+> WITH (KAFKA_TOPIC='pageviews',
+>       VALUE_FORMAT='DELIMITED',
+>       KEY='pageid');
+
+
+# STREAM with Timestamp
+ksql> CREATE STREAM pageviews_timestamped
+>  (viewtime BIGINT,
+>   userid VARCHAR,
+>   pageid VARCHAR)
+>  WITH (KAFKA_TOPIC='pageviews',
+>        VALUE_FORMAT='DELIMITED',
+>        KEY='pageid',
+>        TIMESTAMP='viewtime');
+
+# Show streams:
+ksql> show streams;
+
+# Stream with where clause:
+
+ksql> CREATE STREAM pageviews_intro AS
+>      SELECT * FROM pageviews
+>      WHERE pageid < 'Page_20';
+
+# Show queries
+
+ksql> show queries;
+
+# Create TABLE
+ksql> CREATE TABLE users
+>  (registertime BIGINT,
+>   gender VARCHAR,
+>   regionid VARCHAR,
+>   userid VARCHAR,
+>   interests array<VARCHAR>,
+>   contactinfo map<VARCHAR, VARCHAR>)
+>  WITH (KAFKA_TOPIC='users',
+>        VALUE_FORMAT='JSON',
+>        KEY = 'userid');
+
+
+# show tables
+
+ksql> show tables;
+
+# join clause;
+
+ksql> CREATE STREAM pageviews_enriched AS
+>  SELECT users.userid AS userid, pageid, regionid, gender FROM pageviews
+> LEFT JOIN users ON pageviews.userid = users.userid;
+
+# Aggregate
+
+ksql> CREATE TABLE pageviews_per_region AS  SELECT regionid,  count(*)  FROM pageviews_enriched  GROUP BY regionid;
+
+# Drop Stream
+ksql> DROP STREAM <stream-name>;
+
+# Drop tables
+ksql> DROP TABLE <table-name>;
+
+# Terminate queries
+ksql> terminate <name>;
+

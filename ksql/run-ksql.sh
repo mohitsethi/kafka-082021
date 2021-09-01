@@ -1,0 +1,1 @@
+docker-compose -f docker-compose-ksql.yml exec ksql-cli ksql http://ksql-server:8088
