@@ -2,3 +2,4 @@ test.md
 **/*.pem
 infra
 t*.pkg
+.idea
